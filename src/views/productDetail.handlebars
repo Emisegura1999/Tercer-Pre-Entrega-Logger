@@ -1,0 +1,16 @@
+{{#each product}}
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<div class="container d-flex align-items-center justify-content-center gap-4">
+    <div class="d-flex align-tems-center justify-content-center gap-4 w-50 h-50">
+        <img src="{{this.thumbnail}}" alt="{{this.title}}" class="img-fluid" />
+    </div>
+    <div class="list-unstyled mt-3 rounded py-2 px-2 h-100 w-100">
+        <h5 class="text-dark  mb-3 text-uppercase mb-4">{{title}}</h5>
+        <h5 class="text-dark mb-4">{{category}}</h5>
+        <h5 class="text-dark mb-4">{{price}}</h5>
+        <h5 class="text-dark">{{description}}</h5>
+    </div>
+</div>
+{{/each}}
